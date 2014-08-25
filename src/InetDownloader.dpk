@@ -1,0 +1,36 @@
+package InetDownloader;
+
+{$R *.res}
+{$R 'InetDownloader.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'InetDownloader - компонент для работы по протоколам HTTP, HTTPS, FTP'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl;
+
+contains
+  InetDownloaderUnit in 'InetDownloaderUnit.pas',
+  Additional in 'Additional.pas';
+
+end.
